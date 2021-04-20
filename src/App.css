@@ -1,38 +1,234 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+
+font-family: 'Poppins', sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+    background: #171A21;
+}
+
+header{
+   max-height: 10vh;
+   background: #323338;
+   color: rgb(248, 248, 248);
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 1rem;
+   font-family: sans-serif;
+   letter-spacing: 2px;
+   word-spacing: 2px;
+
+}
+
+.battery{
+min-height: 30vh;
+display: flex;
+justify-content: space-around;
+padding: 3rem;
+
+}
+
+.main{
+  clip-path: polygon(0 7%, 15% 7%, 15% 0%, 85% 0%, 85% 7%, 100% 7%, 100% 100%, 0 100%);
+/*  the above clip-path is generated from
+  https://bennettfeely.com/clippy/  */
+  background-color: black;
+  height : 150px;
+  width : 90px;
+  position: relative;
+}
+.water{
+  background-color: blue;
+  width:100%;
+  position: absolute;
+  bottom: 0px;
+}
+.level{
+  position: absolute;
+  top: 50%;
+  width: 100%;
   text-align: center;
+  color: white;
+  font-size: x-large;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.manual,.motor{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.text{
+font-size: 2rem;
+color: white;
+padding: 2rem;
+}
+.motor{
+font-size: 2rem;
+color: white;
+margin-left: 1.2rem;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+/* The switch - the box around the slider */
+.switch {
+position: relative;
+display: inline-block;
+width: 60px;
+height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+/* The slider */
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+input:checked + .slider {
+background-color: #2196F3;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+
+
+.feature{
+display: flex;
+justify-content:space-around;
+padding: 3rem;
+
+}
+
+
+.tank-capacity,.motor-capacity{
+
+background: #ccc;
+height: 15rem;
+width: 20rem;
+margin: 1rem;
+border-radius: 10px;
+
+
+}
+
+.tc,.mc{
+background: #323338;
+color: white;
+min-height: 5vh;
+border-radius: 5px;
+}
+
+img{
+margin-left: 6rem;
+margin-top: 1rem;
+}
+
+h2{
+text-align: center;
+padding: 1rem;
+word-spacing: 2px;
+letter-spacing: 1px;
+}
+h1{
+text-align: center;
+padding: 1rem;
+}
+
+
+@media screen and (max-width: 450px){
+h2{
+  font-size: 1rem;
+}
+h1{
+  font-size: 2rem
+}
+header.h2{
+  font-size: 5rem
+}
+img{
+  margin-left: 4rem;
+  margin-top: 1rem;
+}
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 320px){
+h2{
+  font-size: 1rem;
+
+}
+h1{
+  font-size: 2rem
+}
+header.h2{
+  font-size: 4rem
+}
+img{
+  margin-left: 3rem;
+  margin-top: 0.8rem;
+}
+
+
+
 }
