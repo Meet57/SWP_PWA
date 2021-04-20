@@ -9,7 +9,7 @@ export const Tanks = () => {
     return (
         <>
             <header>
-                <h2>{name}</h2>
+                <h1>{name}</h1>
             </header>
             <section className="battery">
                 <Tank1 />
