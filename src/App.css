@@ -15,6 +15,11 @@ html{
 body{
     background: #171A21;
 }
+ *{
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+ }
 
 header{
    max-height: 10vh;
