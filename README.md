@@ -1,1 +1,6 @@
-"# SmartWaterPump_PWA" 
+# SmartWaterPump_PWA
+
+#### Nowadays, it is difficult to manage each and every single thing in a big house. Technology has developed so rapidly that we now expect to have automation everywhere so as to ease our work and lifestyle. Rather than remembering every details of house and doing it ourself we prefer automation as it allows us to prioritize different other things.
+
+#### These smart water pump not only adds value to the House but also in Industries. We have observed that Water wastage is also common in industries. The water level indicator sensors are used in factories, chemical plants, and electrical substations and in other liquid storage systems. There are many possible uses for this simple system, examples include monitoring a sump pit (to control pump activation), rainfall detection, and leakage detection. Electronic water level sensors have the capability of alerting if there is a water leak somewhere in the factory. When the water level is too high or too low or exceeds the higher limit, it can detect the water level easily by application which is linked to that particular device. We can also measure the fuel level in motor vehicles and the liquid level containers which are huge in the companies.
+#### We don’t know a single person who would say that they didn’t enjoy automating their work. It is always very special about knowing that our half work is done by technology and then finally we can work on our passion or whatever we are interested in.
